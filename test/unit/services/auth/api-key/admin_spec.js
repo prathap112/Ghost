@@ -6,8 +6,6 @@ const apiKeyAuth = require('../../../../../core/server/services/auth/api-key');
 const models = require('../../../../../core/server/models');
 
 describe('Admin API Key Auth', function () {
-    before(models.init);
-
     beforeEach(function () {
         const fakeApiKey = {
             id: '1234',

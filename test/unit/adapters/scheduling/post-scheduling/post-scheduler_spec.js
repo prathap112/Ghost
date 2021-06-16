@@ -14,10 +14,6 @@ const PostScheduler = require('../../../../../core/server/adapters/scheduling/po
 describe('Scheduling: Post Scheduler', function () {
     let adapter;
 
-    before(function () {
-        models.init();
-    });
-
     beforeEach(function () {
         adapter = new SchedulingDefault();
 

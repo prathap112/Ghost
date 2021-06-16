@@ -6,8 +6,6 @@ const sinon = require('sinon');
 const testUtils = require('../../../../utils');
 
 describe('Content API Key Auth', function () {
-    before(models.init);
-
     this.beforeEach(function () {
         const fakeApiKey = {
             id: '1234',

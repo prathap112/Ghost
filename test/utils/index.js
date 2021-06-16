@@ -47,7 +47,6 @@ const setup = function setup() {
     const args = arguments;
 
     return function innerSetup() {
-        models.init();
         return initFixtures.apply(self, args);
     };
 };

@@ -25,12 +25,10 @@ if (parentPort) {
 }
 
 (async () => {
-    const models = require('../../../models');
     const settingsService = require('../../settings');
 
     // must be initialized before emailAnalyticsService is required otherwise
     // requires are in the wrong order and settingsCache will always be empty
-    await models.init();
     await settingsService.init();
 
     const emailAnalyticsService = require('../');

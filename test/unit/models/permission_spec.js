@@ -5,10 +5,6 @@ const testUtils = require('../../utils');
 const configUtils = require('../../utils/configUtils');
 
 describe('Unit: models/permission', function () {
-    before(function () {
-        models.init();
-    });
-
     after(function () {
         sinon.restore();
         configUtils.restore();

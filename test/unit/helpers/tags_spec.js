@@ -6,10 +6,6 @@ const models = require('../../../core/server/models');
 const helpers = require('../../../core/frontend/helpers');
 
 describe('{{tags}} helper', function () {
-    before(function () {
-        models.init();
-    });
-
     beforeEach(function () {
         sinon.stub(urlService, 'getUrlByResourceId');
     });

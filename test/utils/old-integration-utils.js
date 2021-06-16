@@ -40,8 +40,6 @@ module.exports = {
     },
 
     initGhost: () => {
-        models.init();
-
         settingsCache.shutdown();
 
         return settingsService.init()

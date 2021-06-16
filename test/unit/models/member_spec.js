@@ -5,10 +5,6 @@ const configUtils = require('../../utils/configUtils');
 const config = configUtils.config;
 
 describe('Unit: models/member', function () {
-    before(function () {
-        models.init();
-    });
-
     beforeEach(function () {
         config.set('assetHash', '1');
     });

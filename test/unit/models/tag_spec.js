@@ -6,10 +6,6 @@ const testUtils = require('../../utils');
 const {knex} = require('../../../core/server/data/db');
 
 describe('Unit: models/tag', function () {
-    before(function () {
-        models.init();
-    });
-
     afterEach(function () {
         sinon.restore();
     });

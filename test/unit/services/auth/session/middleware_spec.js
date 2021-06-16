@@ -4,10 +4,6 @@ const sinon = require('sinon');
 const should = require('should');
 
 describe('Session Service', function () {
-    before(function () {
-        models.init();
-    });
-
     afterEach(function () {
         sinon.restore();
     });

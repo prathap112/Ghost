@@ -8,10 +8,6 @@ const defaultSettings = require('../../../core/server/data/schema/default-settin
 const errors = require('@tryghost/errors');
 
 describe('Unit: models/settings', function () {
-    before(function () {
-        models.init();
-    });
-
     describe('events', function () {
         let tracker;
         let eventSpy;

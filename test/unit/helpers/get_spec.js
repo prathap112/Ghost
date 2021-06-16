@@ -13,10 +13,6 @@ describe('{{#get}} helper', function () {
     let inverse;
     let locals = {};
 
-    before(function () {
-        models.init();
-    });
-
     beforeEach(function () {
         fn = sinon.spy();
         inverse = sinon.spy();

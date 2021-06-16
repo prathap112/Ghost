@@ -276,11 +276,6 @@ describe('{{ghost_head}} helper', function () {
         }));
     };
 
-    before(function () {
-        // @TODO: remove when visibility is refactored out of models
-        models.init();
-    });
-
     beforeEach(function () {
         sinon.stub(urlService, 'getUrlByResourceId').returns('https://mysite.com/fakeauthor/');
 

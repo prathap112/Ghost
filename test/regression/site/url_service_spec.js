@@ -18,10 +18,6 @@ const UrlService = rewire('../../../core/frontend/services/url/UrlService');
 describe('Integration: services/url/UrlService', function () {
     let urlService;
 
-    before(function () {
-        models.init();
-    });
-
     before(testUtils.teardownDb);
     before(testUtils.setup('users:roles', 'posts'));
     after(testUtils.teardownDb);

@@ -38,9 +38,6 @@ if (parentPort) {
     };
 
     // INIT required services
-    const models = require('./models');
-    models.init();
-
     const permissions = require('./services/permissions');
     await permissions.init();
 

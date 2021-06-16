@@ -8,10 +8,6 @@ const sessionController = require('../../../../core/server/api/v2/session');
 const sessionServiceMiddleware = require('../../../../core/server/services/auth/session');
 
 describe('v2 Session controller', function () {
-    before(function () {
-        models.init();
-    });
-
     afterEach(function () {
         sinon.restore();
     });

@@ -7,10 +7,6 @@ const validators = require('../../../../../../../core/server/api/v3/utils/valida
 const models = require('../../../../../../../core/server/models');
 
 describe('Unit: v3/utils/validators/input/pages', function () {
-    before(function () {
-        return models.init();
-    });
-
     beforeEach(function () {
         const memberFindPageStub = sinon.stub(models.Member, 'findPage').returns(Promise.reject());
         memberFindPageStub.withArgs({filter: 'label:vip', limit: 1}).returns(Promise.resolve());

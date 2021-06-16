@@ -11,10 +11,6 @@ describe('Backup', function () {
     let filenameStub;
     let fsStub;
 
-    before(function () {
-        models.init();
-    });
-
     afterEach(function () {
         sinon.restore();
     });

@@ -7,10 +7,6 @@ const validators = require('../../../../../../../core/server/api/canary/utils/va
 const models = require('../../../../../../../core/server/models');
 
 describe('Unit: canary/utils/validators/input/pages', function () {
-    before(function () {
-        return models.init();
-    });
-
     beforeEach(function () {
         const memberFindPageStub = sinon.stub(models.Member, 'findPage').returns(Promise.reject());
         memberFindPageStub.withArgs({filter: 'label:vip', limit: 1}).returns(Promise.resolve());

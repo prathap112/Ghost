@@ -15,8 +15,6 @@ describe('Migration Fixture Utils', function () {
             info: sinon.stub(),
             warn: sinon.stub()
         };
-
-        models.init();
     });
 
     afterEach(function () {
